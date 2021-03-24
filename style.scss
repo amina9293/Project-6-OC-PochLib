@@ -1,0 +1,135 @@
+/*  U T I L S */
+
+$green_color: linear-gradient(125deg, #28a772, hsl(157, 57%, 35%));
+$red_color: linear-gradient(125deg, #b92330, hsl(352, 86%, 37%));
+$red_light_color: linear-gradient(125deg, #db303e, hsl(352, 86%, 43%));
+$grey_color: rgba(169, 169, 169, 0.144);
+$error_color: #df1425;
+$green_light_color :linear-gradient(125deg, #39cf91, hsl(157, 54%, 48%));
+
+
+
+@mixin button_features{
+    
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: 1em;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+/* .................. */
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+.btn {
+    @include button_features();
+	padding: 0.8rem 2rem;
+    background-image: $green_color;
+    &:hover{
+        background-image:$green_light_color;
+    }
+    &__addBook{
+        text-align: center;
+    }
+}
+
+.cancelButton {
+	padding: 0.8rem 2.8rem;
+    background-image: $red_color;
+    &:hover{
+        background-image: $red_light_color;
+    }
+}
+
+.title {
+	text-align: center;
+	padding: 20px;
+	box-shadow: 6px 6px 10px $grey_color;
+    background-color: $grey_color;
+   
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+
+form {
+	text-align: left;
+	display: inline-flexbox;
+    vertical-align: auto;
+    & label, input {
+        margin: 1em;
+    }
+    & input{
+        padding: 0.5rem 1.5rem;
+	    margin: 1em;
+	    border: 1px solid black;
+	    display: block;
+	    border-color: #000000;
+	    width: 90%;
+	    height: 36px;
+	    line-height: 26px;
+        font-weight: 400;
+        @media screen and (min-width: 1240px){
+            width: 30%;
+        }
+    }
+    
+}
+
+.errorMessage {
+	color:$error_color;
+	text-align: center;
+}
+
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+    align-items: center;
+    &__result{
+        text-align: justify;
+	    width: 400px;
+	    height: auto;
+	    word-wrap: break-word;
+	    margin: 1em;
+	    padding: 1em;
+	    position: relative;
+        box-shadow: 6px 6px 10px #00000034;
+        font-size: 16px;
+        @media screen and (min-width: 1024px){
+            font-size: 18px;
+        }
+        @media screen and (min-width: 1024px){
+            font-size: 16px;
+        }
+        #img {
+            max-width: 150px;
+            max-height: 150px;
+            align-items: center;
+        }
+        .fas, .far{
+            cursor: pointer;
+            &:hover{
+                font-size: 20px;
+               
+                }
+            }
+    }
+}
+
+
+
+
+
+
+
+
