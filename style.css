@@ -1,0 +1,116 @@
+/*  U T I L S */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 1em;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 0.8rem 2rem;
+  background-image: linear-gradient(125deg, #28a772, #268c65);
+}
+.btn:hover {
+  background-image: linear-gradient(125deg, #39cf91, #38bc8a);
+}
+.btn__addBook {
+  text-align: center;
+}
+
+.cancelButton {
+  padding: 0.8rem 2.8rem;
+  background-image: linear-gradient(125deg, #b92330, #af0d23);
+}
+.cancelButton:hover {
+  background-image: linear-gradient(125deg, #db303e, #cc0f28);
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+  box-shadow: 6px 6px 10px rgba(169, 169, 169, 0.144);
+  background-color: rgba(169, 169, 169, 0.144);
+}
+@media screen and (min-width: 1240px) {
+  .title {
+    font-size: 54.93px;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+@media screen and (min-width: 1240px) {
+  h2 {
+    font-size: 43.95px;
+  }
+}
+
+form {
+  text-align: left;
+  display: inline-flexbox;
+  vertical-align: auto;
+}
+form label, form input {
+  margin: 1em;
+}
+form input {
+  padding: 0.5rem 1.5rem;
+  margin: 1em;
+  border: 1px solid black;
+  display: block;
+  border-color: #000000;
+  width: 90%;
+  height: 36px;
+  line-height: 26px;
+  font-weight: 400;
+}
+@media screen and (min-width: 1240px) {
+  form input {
+    width: 30%;
+  }
+}
+
+.errorMessage {
+  color: #df1425;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.container__result {
+  text-align: justify;
+  width: 400px;
+  height: auto;
+  word-wrap: break-word;
+  margin: 1em;
+  padding: 1em;
+  position: relative;
+  box-shadow: 6px 6px 10px #00000034;
+  font-size: 16px;
+}
+@media screen and (min-width: 1240px) {
+  .container__result {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .container__result {
+    font-size: 16px;
+  }
+}
+.container__result #img {
+  max-width: 150px;
+  max-height: 150px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
