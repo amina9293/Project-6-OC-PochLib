@@ -5,6 +5,7 @@ In this file, you will find:
 - index.html
 - app.js
 - style.css , style.scss
+- picture for unavailable picture
 
 
 
@@ -21,11 +22,11 @@ You'll need to download Sass for the design :
 
 
 
+
 Installing
 
 - Download the project file;
 - Open the HTML in the browser of your choice to see the website;
-For implementation , Open the different files in a text editor of your choice.
 
 
 
