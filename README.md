@@ -17,7 +17,7 @@ You'll need a text editor such as SublimText or Visual Code Studio.
 
 You'll need to download Sass for the design :
   - The easiest way with NPM : npm install -g sass ;
-    - Then from the project directory, run : sass --watch public/design.scss public/design.css ;
+    - Then from the project directory, run : sass --watch style.scss:style.css ;
   - Or go to : https://sass-lang.com/install ;
 
 
